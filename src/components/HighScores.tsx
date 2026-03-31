@@ -51,15 +51,18 @@ export default function HighScores() {
   return (
     <div className="min-h-screen text-white p-4 md:p-8">
       <div className="max-w-3xl mx-auto">
-        <div className="flex items-center gap-4 mb-8">
-          <Link to="/" className="p-2 hover:bg-white/10 rounded-full transition-colors">
-            <ArrowLeft size={24} />
-          </Link>
-          <h1 className="text-xl font-bold flex items-center gap-3">
-            <Trophy className="text-yellow-400 drop-shadow-md" />
-            Melhores Pontuações
-          </h1>
-        </div>
+        <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center gap-4">
+                      <Link to="/" className="p-2 hover:bg-white/10 rounded-full transition-colors">
+                        <ArrowLeft size={24} />
+                      </Link>
+                      <h1 className="text-xl font-bold text-slate-50 drop-shadow-md">Ranking</h1>
+          </div>
+              
+            <div className="flex items-center gap-2 border border-white/5 bg-white/10 backdrop-blur-md p-3 rounded-full transition-colors shadow-xl">
+            <Trophy size={24} className="text-yellow-400 drop-shadow-md" />
+            </div>
+        </div>    
 
         {loading ? (
           <div className="bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden shadow-xl">
@@ -107,8 +110,8 @@ CREATE POLICY "Inserção pública em Scores" ON "Scores" FOR INSERT WITH CHECK 
         ) : (
           <div className="bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden shadow-xl">
             <div className="grid grid-cols-12 gap-4 p-4 border-b border-white/10 bg-white/5 font-semibold text-slate-300">
-              <div className="col-span-2 text-center">Posição</div>
-              <div className="col-span-6">Jogador</div>
+              <div className="col-span-2 text-center justify-center">Posição</div>
+              <div className="col-span-6 text-center">Jogador</div>
               <div className="col-span-4 text-right">Pontuação</div>
             </div>
             <div className="divide-y divide-white/5">
@@ -131,7 +134,7 @@ CREATE POLICY "Inserção pública em Scores" ON "Scores" FOR INSERT WITH CHECK 
                       <span className="text-slate-400 font-bold text-lg">{index + 1}º</span>
                     )}
                   </div>
-                  <div className="col-span-6 font-medium text-lg truncate text-slate-100">
+                  <div className="col-span-6 font-medium text-center justify-center text-lg truncate text-slate-100">
                     {score.player_name}
                   </div>
                   <div className="col-span-4 text-right">
