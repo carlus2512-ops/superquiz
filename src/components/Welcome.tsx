@@ -55,12 +55,12 @@ export default function Welcome() {
         className="text-center max-w-4xl w-full"
       >
         <div className="flex justify-center mb-6 pt-12">
-          <div className="bg-gradient-to-br from-cyan-500/20 to-violet-600/20 p-4 rounded-full border border-white/10 shadow-2xl">
-            <BrainCog size={64} className="text-sky-400" />
+          <div className=" p-4 rounded-full bg-sky/5 backdrop-blur border border-white/10 shadow-xl">
+            <BrainCog size={64} className="text-sky-500" />
           </div>
         </div>
         
-        <h1 className="text-5xl md:text-5xl font-black mb-6 text-transparent bg-clip-text bg-sky-300">
+        <h1 className="text-5xl md:text-5xl font-black mb-6 text-sky-500 bg-clip-text shadow-2x1">
           Super Quiz
         </h1>
         <p className="text-slate-100 text-base sm:text-lg md:text-xl text-center font-bold">
