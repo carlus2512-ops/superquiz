@@ -84,24 +84,24 @@ export default function Stats() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="bg-green-500/10 backdrop-blur-md p-6 rounded-2xl border border-green-500/30 flex flex-col items-center justify-center text-center relative overflow-hidden shadow-xl"
+            className="bg-teal-500/10 backdrop-blur-md p-6 rounded-2xl border border-teal-500/30 flex flex-col items-center justify-center text-center relative overflow-hidden shadow-xl"
           >
-            <div className="absolute inset-0 bg-green-500/5"></div>
-            <CheckCircle className="text-green-400 mb-2 relative z-10 drop-shadow-md" size={32} />
-            <div className="text-3xl font-black text-green-400 mb-1 relative z-10 drop-shadow-sm">{stats.correctAnswers}</div>
-            <div className="text-sm text-green-400/80 font-medium uppercase tracking-wider relative z-10">Acertos Totais</div>
+            <div className="absolute inset-0 bg-teal-500/5"></div>
+            <CheckCircle className="text-teal-400 mb-2 relative z-10 drop-shadow-md" size={32} />
+            <div className="text-3xl font-black text-teal-400 mb-1 relative z-10 drop-shadow-sm">{stats.correctAnswers}</div>
+            <div className="text-sm text-teal-400 font-medium uppercase tracking-wider relative z-10">Acertos Totais</div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="bg-red-500/10 backdrop-blur-md p-6 rounded-2xl border border-red-500/30 flex flex-col items-center justify-center text-center relative overflow-hidden shadow-xl"
+            className="bg-rose-500/10 backdrop-blur-md p-6 rounded-2xl border border-rose-500/30 flex flex-col items-center justify-center text-center relative overflow-hidden shadow-xl"
           >
-            <div className="absolute inset-0 bg-red-500/5"></div>
-            <XCircle className="text-red-400 mb-2 relative z-10 drop-shadow-md" size={32} />
-            <div className="text-3xl font-black text-red-400 mb-1 relative z-10 drop-shadow-sm">{incorrectAnswers}</div>
-            <div className="text-sm text-red-400/80 font-medium uppercase tracking-wider relative z-10">Erros Totais</div>
+            <div className="absolute inset-0 bg-rose-400/5"></div>
+            <XCircle className="text-rose-400 mb-2 relative z-10 drop-shadow-md" size={32} />
+            <div className="text-3xl font-black text-rose-400 mb-1 relative z-10 drop-shadow-sm">{incorrectAnswers}</div>
+            <div className="text-sm text-rose-400 font-medium uppercase tracking-wider relative z-10">Total de Erros</div>
           </motion.div>
         </div>
 
@@ -138,11 +138,11 @@ export default function Stats() {
                   <div className="col-span-4 md:col-span-6 flex items-center justify-center gap-3">
                     <div className="w-full max-w-[200px] h-3 bg-black/30 rounded-full overflow-hidden flex border border-white/5">
                       <div 
-                        className="h-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]" 
+                        className="h-full bg-teal-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]" 
                         style={{ width: `${gameAccuracy}%` }}
                       ></div>
                       <div 
-                        className="h-full bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.5)]" 
+                        className="h-full bg-rose-500 shadow-[0_0_10px_rgba(239,68,68,0.5)]" 
                         style={{ width: `${100 - gameAccuracy}%` }}
                       ></div>
                     </div>
@@ -152,7 +152,7 @@ export default function Stats() {
                   </div>
                   
                   <div className="col-span-4 md:col-span-3 text-right">
-                    <span className="text-xl font-bold text-green-400 drop-shadow-sm">{game.score}</span>
+                    <span className="text-xl font-bold text-teal-400 drop-shadow-sm">{game.score}</span>
                     <span className="text-slate-400 text-sm ml-1">/ {game.total}</span>
                   </div>
                 </motion.div>
