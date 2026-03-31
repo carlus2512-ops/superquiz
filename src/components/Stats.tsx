@@ -34,7 +34,7 @@ export default function Stats() {
         <p className="text-slate-300 mb-8 text-center max-w-md">
           Jogue algumas partidas para ver seu histórico de erros e acertos aqui.
         </p>
-        <Link to="/" className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white px-8 py-3 rounded-full font-bold transition-colors shadow-xl">
+        <Link to="/" className="bg-sky/5 backdrop-blur-md border border-white/10 hover:bg-white/5 text-white px-8 py-3 rounded-full font-bold transition-colors shadow-xl">
           Voltar ao Início
         </Link>
       </div>
