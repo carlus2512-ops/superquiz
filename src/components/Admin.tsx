@@ -128,13 +128,13 @@ export default function Admin() {
 
   return (
     <div className="min-h-screen text-white p-4 md:p-8">
-      <div className="max-w-4xl mx-auto w-full">
+      <div className="max-w-3xl mx-auto w-full">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-4">
             <Link to="/" className="p-2 hover:bg-white/10 rounded-full transition-colors">
               <ArrowLeft size={24} />
             </Link>
-            <h1 className="text-x1 font-bold text-slate-50 drop-shadow-md">Painel de Controle</h1>
+            <h1 className="text-xl font-bold text-slate-50 drop-shadow-md">Painel de Controle</h1>
           </div>
           <Link 
             to="/admin/content" 
@@ -176,7 +176,7 @@ export default function Admin() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="bg-sky/10 backdrop-blur-md border border-white/10 text-white p-2 rounded-full hover:bg-cyan-600 disabled:opacity-50 transition-colors shadow-lg"
+                    className="bg-sky/10 backdrop-blur-md border border-white/10 text-white p-2 rounded-full hover:bg-white/5 disabled:opacity-50 transition-colors shadow-lg"
                   >
                     <Plus size={24} />
                   </button>
@@ -211,7 +211,7 @@ export default function Admin() {
                     <button
                       type="submit"
                       disabled={loading || !selectedCategory}
-                      className="bg-sky/10 backdrop-blur-md border border-white/10 text-white p-2 rounded-full hover:bg-cyan-600 disabled:opacity-70 transition-colors shadow-lg"
+                      className="bg-sky/10 backdrop-blur-md border border-white/10 text-white p-2 rounded-full hover:bg-white/5 disabled:opacity-70 transition-colors shadow-lg"
                     >
                       <Plus size={24} />
                     </button>
