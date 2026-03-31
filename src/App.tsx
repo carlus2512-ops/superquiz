@@ -53,13 +53,7 @@ function AppContent() {
   const isGameRoute = location.pathname === '/game';
 
   return (
-    <div className={`min-h-screen bg-gradient-to-r from-sky-600 via-sky-600 to-sky-600 text-slate-100 ${isGameRoute ? '' : 'pb-16'}`}>
-      {/* Background decorative elements
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-blue-600/20 blur-[120px]"></div>
-        <div className="absolute top-[60%] -right-[10%] w-[40%] h-[60%] rounded-full bg-purple-600/20 blur-[120px]"></div>
-        <div className="absolute top-[20%] left-[60%] w-[30%] h-[30%] rounded-full bg-pink-600/20 blur-[100px]"></div>
-      </div> */}
+    <div className={`min-h-screen bg-gradient-to-br from-sky-700 via-sky-600 to-sky-600 text-white ${isGameRoute ? '' : 'pb-16'}`}>
       
       <div className="relative z-10">
         <Suspense fallback={<LoadingScreen />}>
